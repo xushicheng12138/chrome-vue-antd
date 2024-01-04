@@ -1,0 +1,45 @@
+{
+  "name": "cookie注入",
+  "version": "2.0.0",
+  "description": "注入cookie,适用于测试网站",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "<all_urls>"
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "storage",
+    "cookies",
+    "debugger",
+    "activeTab",
+    "background",
+    "debugger",
+    "webRequestBlocking"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/images/app.png",
+      "32": "/images/app.png",
+      "48": "/images/app.png",
+      "128": "/images/app.png"
+    },
+    "default_title": "cookie注入"
+  }
+}

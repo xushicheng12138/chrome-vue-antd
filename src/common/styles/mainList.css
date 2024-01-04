@@ -1,0 +1,15 @@
+.ant-table-wrapper .ant-spin-nested-loading {
+    height: 100% !important;
+}
+
+.ant-spin-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ant-tabs-nav-wrap{
+    justify-content: center;
+}
