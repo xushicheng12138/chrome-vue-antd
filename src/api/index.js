@@ -2,10 +2,10 @@
 // import '@/mock'
 /*global chrome*/
 // 请求服务器地址（开发环境模拟请求地址）
-let API_DOMAIN = "http://192.168.22.141:5000/";
+let API_DOMAIN = "http://121.196.232.124:8080/";
 // 请求服务器地址（正式build环境真实请求地址）
 if (import.meta.env.MODE === "production") {
-  API_DOMAIN = "http://192.168.22.141:5000/";
+  API_DOMAIN = "http://121.196.232.124:8080/";
 }
 
 // API请求正常，数据正常
@@ -19,6 +19,7 @@ export const API_CODE = {
   // API请求正常，登录异常
   ERR_LOGOUT: 401,
 };
+
 // API请求异常报错内容
 export const API_FAILED = "网络连接异常，请稍后再试";
 
