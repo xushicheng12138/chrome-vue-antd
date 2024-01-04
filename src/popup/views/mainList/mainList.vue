@@ -16,7 +16,7 @@
                 <template v-else-if="column.dataIndex === 'cookies' && record.cookiesArr">
                     <div class="cookieClass">
                         <div color="geekblue" v-for="(item, index) in record.cookiesArr" :key="index">
-                            {{ JSON.stringify(item) }}
+                            <a-tag color="#2db7f5"> {{ JSON.stringify(item) }}</a-tag>
                         </div>
                     </div>
                 </template>
